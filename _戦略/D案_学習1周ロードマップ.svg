@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 1480" font-family="'Hiragino Kaku Gothic ProN','Yu Gothic','Meiryo',sans-serif">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e3356b"/><stop offset="1" stop-color="#7a2ff7"/>
+    </linearGradient>
+    <linearGradient id="spine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e3356b"/><stop offset="1" stop-color="#7a2ff7"/>
+    </linearGradient>
+    <filter id="sh" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <rect width="980" height="1480" fill="#f6f6f9"/>
+
+  <!-- Title -->
+  <rect x="0" y="0" width="980" height="92" fill="url(#hdr)"/>
+  <text x="40" y="46" fill="#fff" font-size="27" font-weight="800">アダルト広告アービトラージ ｜ 学習1周ロードマップ</text>
+  <text x="40" y="74" fill="#ffd9e6" font-size="15">ゴール：開設 → 入金 → 配信 → 数字を見る → 1回改善 → 停止して振り返り を完遂　／　予算 $330（¥50,000）</text>
+
+  <!-- 決め打ち構成 -->
+  <rect x="40" y="112" width="900" height="118" rx="12" fill="#fff" stroke="#e7e7ee" filter="url(#sh)"/>
+  <text x="62" y="140" fill="#7a2ff7" font-size="15" font-weight="800">決め打ち構成（迷ったらこれ）</text>
+  <g font-size="13.5" fill="#33333b">
+    <text x="62" y="167">▸ 広告ネットワーク： <tspan font-weight="700">HilltopAds</tspan>（$100入金 / カード or USDT・BTC）</text>
+    <text x="62" y="190">▸ オファー： <tspan font-weight="700">Chaturbate 無料登録 $1（SOI・審査なし）</tspan>　※次点 StripCash $3</text>
+    <text x="62" y="213">▸ LP： <tspan font-weight="700">prelander_age_gate.html</tspan>（年齢ゲート＋クリックID引継ぎ）</text>
+    <text x="520" y="167">▸ 計測： 直結でOK／学ぶなら <tspan font-weight="700">BeMob無料</tspan> を中間に</text>
+    <text x="520" y="190">▸ 配信： ポップアンダー／<tspan font-weight="700">1日上限 $10〜15</tspan></text>
+    <text x="520" y="213">▸ ターゲット： まず Tier-3〜2（安く回す）</text>
+  </g>
+
+  <!-- spine -->
+  <line x1="70" y1="270" x2="70" y2="1230" stroke="url(#spine)" stroke-width="4"/>
+
+  <!-- ===== Day cards ===== -->
+  <!-- helper: dot + card -->
+  <!-- Day 0 -->
+  <circle cx="70" cy="300" r="11" fill="#e3356b"/>
+  <rect x="110" y="270" width="830" height="92" rx="12" fill="#fff" stroke="#e7e7ee" filter="url(#sh)"/>
+  <text x="132" y="298" font-size="16" font-weight="800" fill="#1f1f27">Day 0 ｜ 準備（お金を使わない側から）</text>
+  <text x="132" y="324" font-size="13" fill="#44444d">☐ Chaturbateアフィリ登録→無料登録モデルのリンク発行　☐ (任意)BeMob登録・postback URL控え</text>
+  <text x="132" y="346" font-size="13" fill="#44444d">☐ prelander_age_gate.html の OFFER_URL 差替え → 無料ホスティングに設置</text>
+  <text x="852" y="298" font-size="11.5" fill="#9a9aa5" text-anchor="end">所要 60〜90分</text>
+
+  <!-- Day 1 (関門・強調) -->
+  <circle cx="70" cy="420" r="13" fill="#e3356b" stroke="#fff" stroke-width="3"/>
+  <rect x="110" y="386" width="830" height="104" rx="12" fill="#fff5f8" stroke="#e3356b" stroke-width="2" filter="url(#sh)"/>
+  <rect x="110" y="386" width="6" height="104" rx="3" fill="#e3356b"/>
+  <text x="132" y="414" font-size="16" font-weight="800" fill="#b81e52">★ Day 1 ｜ 開設 → 入金（最大の関門）</text>
+  <text x="132" y="440" font-size="13" fill="#44444d">☐ HilltopAdsを「広告主(Advertiser)」で登録（Publisherと間違えない）　☐ 国=日本で決済・最低額を確認</text>
+  <text x="132" y="462" font-size="13" fill="#44444d">☐ <tspan font-weight="700">$100入金</tspan> → 残高反映を確認　（カードNGなら USDT/BTC に切替）</text>
+  <text x="132" y="482" font-size="12" fill="#b81e52">↳ どうしても詰まったら PlugRush $10 で代替練習。とにかく「残高を持てたか」が全て。</text>
+  <text x="852" y="414" font-size="11.5" fill="#b81e52" text-anchor="end">所要 60〜120分</text>
+
+  <!-- Day 2 -->
+  <circle cx="70" cy="548" r="11" fill="#b13bd6"/>
+  <rect x="110" y="514" width="830" height="104" rx="12" fill="#fff" stroke="#e7e7ee" filter="url(#sh)"/>
+  <text x="132" y="542" font-size="16" font-weight="800" fill="#1f1f27">Day 2 ｜ 計測 → クリエイティブ → 配信開始</text>
+  <text x="132" y="568" font-size="13" fill="#44444d">☐ postback設定（テストクリックでクリックID貫通を確認）　☐ クリエイティブ3〜5本（露骨NG・誇大NG）</text>
+  <text x="132" y="590" font-size="13" fill="#44444d">☐ キャンペーン作成：ポップアンダー／<tspan font-weight="700">デイリーキャップ $10〜15 必須</tspan></text>
+  <text x="132" y="610" font-size="12" fill="#7a2ff7">↳ 配信ON → 広告審査通過（HilltopAdsは約1時間）</text>
+  <text x="852" y="542" font-size="11.5" fill="#9a9aa5" text-anchor="end">所要 90分</text>
+
+  <!-- Day 3-4 -->
+  <circle cx="70" cy="676" r="11" fill="#8a2ff0"/>
+  <rect x="110" y="642" width="830" height="100" rx="12" fill="#fff" stroke="#e7e7ee" filter="url(#sh)"/>
+  <text x="132" y="670" font-size="16" font-weight="800" fill="#1f1f27">Day 3〜4 ｜ 数字を見る（回す・触らない）</text>
+  <text x="132" y="696" font-size="13" fill="#44444d">☐ $30〜50消化 or 数百クリックまで <tspan font-weight="700">我慢（早すぎる判断が罠）</tspan></text>
+  <text x="132" y="718" font-size="13" fill="#44444d">☐ 記録：CPC / 送客 / CV / CV率 / EPC / 消化額</text>
+  <text x="132" y="736" font-size="12" fill="#7a2ff7">↳ 損益分岐CV率 = CPC ÷ 単価（例 CPC$0.02・$1 → 50クリックに1件で±0）</text>
+  <text x="852" y="670" font-size="11.5" fill="#9a9aa5" text-anchor="end">1日数回チェック</text>
+
+  <!-- Day 5 -->
+  <circle cx="70" cy="800" r="11" fill="#7a2ff7"/>
+  <rect x="110" y="766" width="830" height="92" rx="12" fill="#fff" stroke="#e7e7ee" filter="url(#sh)"/>
+  <text x="132" y="794" font-size="16" font-weight="800" fill="#1f1f27">Day 5 ｜ 1回だけ改善する（学習の核）</text>
+  <text x="132" y="820" font-size="13" fill="#44444d">☐ <tspan font-weight="700">一度に1要素だけ</tspan>変更：地域 / 面 / クリエイティブ / 入札 のどれか1つ</text>
+  <text x="132" y="842" font-size="13" fill="#44444d">☐ 予備 $100 を投入し、Day3〜4と同じ数字を再取得 → 前後で何が動いたか記録</text>
+  <text x="852" y="794" font-size="11.5" fill="#9a9aa5" text-anchor="end">所要 60分</text>
+
+  <!-- Day 6 -->
+  <circle cx="70" cy="912" r="11" fill="#7a2ff7"/>
+  <rect x="110" y="878" width="830" height="92" rx="12" fill="#fff" stroke="#e7e7ee" filter="url(#sh)"/>
+  <text x="132" y="906" font-size="16" font-weight="800" fill="#1f1f27">Day 6 ｜ 停止して振り返り</text>
+  <text x="132" y="932" font-size="13" fill="#44444d">☐ 1周回ったら（黒字/赤字を問わず）停止　☐ 振り返り「学びの言語化」テンプレを記入</text>
+  <text x="132" y="954" font-size="13" fill="#44444d">☐ チェックリスト（CPC/EPC/CV率/損益分岐/postback…）を<tspan font-weight="700">自分の言葉で説明できるか</tspan>確認</text>
+  <text x="852" y="906" font-size="11.5" fill="#9a9aa5" text-anchor="end">所要 60分</text>
+
+  <!-- 終点 -->
+  <circle cx="70" cy="1010" r="9" fill="#2bb673"/>
+  <text x="92" y="1015" font-size="14" font-weight="800" fill="#2bb673">＝ 1周完遂（結果に関わらず、学べたら成功）</text>
+
+  <!-- 停止トリガー -->
+  <rect x="40" y="1052" width="900" height="150" rx="12" fill="#1f1f27" filter="url(#sh)"/>
+  <text x="64" y="1084" fill="#ff8fb4" font-size="15" font-weight="800">⛔ 停止トリガー（どれか1つで止める → 学びを言語化して回収）</text>
+  <g font-size="13.5" fill="#e9e9ef">
+    <text x="64" y="1116">①  予算 $330 を使い切った</text>
+    <text x="64" y="1144">②  テスト＋1改善の「1周」が完了した</text>
+    <text x="64" y="1172">③  審査 / 決済 / 規約で復帰不能な停止を食らった</text>
+  </g>
+  <text x="600" y="1116" font-size="12.5" fill="#9a9aa5">※ 利益の有無は成功条件ではない。</text>
+  <text x="600" y="1140" font-size="12.5" fill="#9a9aa5">　$330 は授業料。CV 1件で大成功、</text>
+  <text x="600" y="1164" font-size="12.5" fill="#9a9aa5">　0件でも「なぜ0か」を言語化できれば成功。</text>
+
+  <!-- コンプラ最低ライン -->
+  <rect x="40" y="1222" width="900" height="210" rx="12" fill="#fff" stroke="#e7e7ee" filter="url(#sh)"/>
+  <text x="64" y="1252" fill="#b81e52" font-size="15" font-weight="800">踏んだら一発退場（最低ライン）</text>
+  <g font-size="13" fill="#44444d">
+    <text x="64" y="1282">✗ クローキング（審査用と実配信でページ出し分け）はやらない</text>
+    <text x="64" y="1310">✗ 誇大・誤認クリエイティブ（「必ず会える」等）／実在人物・偽通知UI</text>
+    <text x="64" y="1338">✗ 年齢ゲート無し・運営者情報無しのLP</text>
+    <text x="64" y="1366">✗ 児童に関する素材・暗示は一切扱わない（コンテンツも送客先も）</text>
+    <text x="64" y="1394">✓ 送客先は正規大手cam（Chaturbate/Stripchat）に限定／自分名義の決済のみ</text>
+    <text x="64" y="1420">✓ 入金・出稿の直前に各社管理画面で最低額・決済を再確認（【要確認】箇所）</text>
+  </g>
+</svg>
