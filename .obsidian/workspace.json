@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "307bbdf8557dce2e",
+        "id": "547fbcb2ac113e92",
         "type": "tabs",
         "children": [
           {
-            "id": "b90a63bb12a4dd98",
+            "id": "2ab47ee63c7042d8",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "blog-vault/ポケカ相場ブログ/pokeca-x-beginner-set.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "pokeca-x-beginner-set"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "グラフビュー"
             }
           }
         ]
@@ -183,12 +179,45 @@
       "bases:新規ベースを作成": false
     }
   },
-  "active": "b90a63bb12a4dd98",
+  "active": "2ab47ee63c7042d8",
   "lastOpenFiles": [
-    "02_outlines/成人向けコミック_コスト最適化_構成案.md",
-    "blog-vault/01_Knowledge/blog-research-2026-06-26.md",
-    "blog-vault/_ダッシュボード.md",
-    "blog-vault/_使い方.md",
-    "Claude機能棚卸し_C案運用設計.md"
+    "_戦略/MyLead徹底調査_結論.md",
+    "verticals/アダルトグッズ女性向け/01_research/ショップ配送裏取り_2026-07.md",
+    "verticals/アダルトグッズ女性向け/01_research/KW調査_グッズ_2026-07.md",
+    "verticals/アダルトグッズ女性向け/01_research/表現ガイド_薬機景表_2026-07.md",
+    "verticals/アダルトグッズ女性向け/01_research/表現ガイド_薬機景表_2026-07.md.tmp.28584.623cbb9bdf91",
+    "verticals/アダルトグッズ女性向け/02_outlines/悩み別_構成集_2026-07.md",
+    "verticals/アダルトグッズ女性向け/01_research/ブランド解説_素材_2026-07.md",
+    "verticals/アダルトグッズ女性向け/02_outlines/タイプ別比較_構成_2026-07.md",
+    "verticals/アダルトグッズ女性向け/02_outlines/タイプ別比較_構成_2026-07.md.tmp.28584.3863ec06c2be",
+    "verticals/アダルトグッズ女性向け/02_outlines",
+    "verticals/女性向けアダルト_クラスター/記事充実_宿題セット_2026-07.md",
+    "verticals/アダルトグッズ女性向け/01_research/グッズ知識ベース_2026-07.md",
+    "verticals/アダルトグッズ女性向け/01_research",
+    "verticals/アダルトグッズ女性向け/03_drafts/ラブグッズ_初心者の選び方_01.md",
+    "verticals/アダルトグッズ女性向け/03_drafts/ラブグッズ_初心者の選び方_01.md.tmp.22908.b5ad5355f98e",
+    "verticals/アダルトグッズ女性向け/03_drafts/ラブグッズ_バレない買い方_01.md",
+    "verticals/アダルトグッズ女性向け/03_drafts",
+    "verticals/女性向けアダルト_クラスター/サーバー申込_入力値シート_2026-07.md",
+    "_戦略/軽い成約案件_リサーチと次の設計.md",
+    "_戦略/軽い成約案件_リサーチと次の設計.md.tmp.1436.3e8f858ab569",
+    "verticals/アダルトグッズ女性向け/グッズ柱スターター_2026-07.md",
+    "verticals/女性向けアダルト_クラスター/サイト設計_2026-07.md",
+    "verticals/女性向けアダルト_クラスター",
+    "verticals/アダルトグッズ女性向け/運用方法_XとThreads_2026-07.md",
+    "_戦略/次の一手_プロの運用法とネクストアクション.md",
+    "verticals/ポケカ相場ブログ/01_research/トレンド収集/trend-2026-07-05.md",
+    "verticals/同人音声ASMR/01_research/asmr-xthreads-verdict-2026-07-04.md",
+    "verticals/同人音声ASMR/02_outlines/asmr-minimal-lp-2026-07-04.md",
+    "verticals/女性向けアダルトグッズ/01_research/femaleadult-xthreads-verdict-2026-07-05.md",
+    "verticals/同人音声ASMR/02_outlines/asmr-30day-calendar-2026-07-04.md",
+    "verticals/同人音声ASMR/03_drafts/asmr-post-templates-30-2026-07-04.md",
+    "verticals/女性向けアダルトグッズ/03_drafts/femaleadult-post-templates-30-2026-07-05.md",
+    "verticals/同人音声ASMR/03_drafts/asmr-profiles-fixed-2026-07-04.md",
+    "verticals/女性向けアダルトグッズ/03_drafts/femaleadult-profiles-fixed-2026-07-05.md",
+    "verticals/女性向けアダルトグッズ/_宿題_XThreads探索_CoworkD_2026-07-04.md.tmp.33400.55b45cc34269",
+    "verticals/女性向けアダルトグッズ/00_女性向けグッズ_HUB.md.tmp.23908.b3e288522a99",
+    "_戦略/案件別プラン/D案_学習1周ロードマップ.svg",
+    "_戦略/案件別プラン/C案_運用構成図.svg"
   ]
 }

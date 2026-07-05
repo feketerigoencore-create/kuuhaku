@@ -1,159 +1,52 @@
-# アダルト広告アービトラージ D案 — 実行進捗ログ
-
-> 学習1周「広告開設 → 入金 → 配信 → 数字を見る → 1回改善 → 停止して振り返り」の実行記録。
-> 最終更新：2026-06-29
-> 予算：$96.8（$100入金 − 手数料3.2%）／ 方針：CV1件で大成功、結果問わず1周完遂が成功条件。
 
 ---
 
-## いまどこ？（現在地）※2026-06-30 更新
+## 後日談（2026-07-04）：配信2日でオファーが停止 → 監視して即ストップ
 
-**方針転換：cam → 出会い系SOIへ。** camは（A）審査でNetlifyドメインがブラックリスト判定（1/92）、（B）本人の違和感、の2点でいったん保留。代わりに「出会い系SOI（より手堅く、$100も活用できる）」に切り替え中。
+game-test-01 は配信好調（2日で約26,052表示・$8.62消化・実効CPM$0.33）だったが、**コンバージョンは0**。
+原因：MyLeadの「破損リンク(Damaged links)」通知 → **オファー「Mini Games - Android - MX」が“プログラムがアクティブではありません（＝停止）”**。エラー19,225件。送客した約2.6万visitが**死んだオファー**に着地していた。
 
-**今の足止めポイント：MyLeadのトラフィックソースが選べない。**
-- MyLead（出会い系等のCPAネットワーク）に登録成功。
-- 採用オファー：**Jointhedating（CPL $1.94・シングルオプトイン・GEO: AU/CA/NZ/UK/US・pop禁止リストに無し＝pop可・専用LPあり＝ドメイン不要）**。
-- HilltopAdsをトラフィックソースとして登録（「正常に追加されました」）したが、**オファー参加画面の「選択」ドロップダウンに出てこない**（ログインし直しても改善せず）。
-- → おそらく**トラフィックソースがMyLead側で承認待ち**で、承認されるまで選べない可能性。時間をおく or MyLandサポートに確認。
+対応：**HilltopAdsのキャンペーンを即トラフィックオフ**（死んだ案件への出血を停止）。消化$8.62・残高約$92。
 
-**再開時の一手：**
-1. 時間をおいて（数時間〜翌日）MyLeadで Jointhedating → キャンペーンに参加 → 「選択」にHilltopAdsが出るか確認。
-2. 出なければ MyLeadサポート（右下チャット）に「added traffic source but it doesn't appear in the offer dropdown」と確認。
-3. 選べたら：プロモ説明（英文）＋条件チェック＋確認送信 → 承認されたら**追跡リンク取得**。
-4. そのリンクをHilltopAdsの新規キャンペーンの送り先に（GEO=US等1つ／Web view「許可しない」※Inapp禁止のため／CPM最小／1日$20・合計$45）→ 審査提出。
+**核心の教訓（実地でしか学べない）：**
+> **オファーは予告なく停止する。** 「配信して放置」は死んだ案件に広告費を垂れ流す最大の事故。**成果が出ているか＋オファーが生きているかを監視し、止まったら即ストップ or 差し替える**のが鉄則。今回それを$8.62で体験。
+
+**学習1周の到達点：** 開設→入金→審査突破(8回目)→配信→実データ→「オファー死亡」という現実の事故→監視して停止、まで完走。**“稼ぐ力”の地図は完全に手に入った。**
 
 ---
 
-## 完了したこと（チェックリスト）
+## 2026-07-05 追記：BeMob計測チェーンを構築（お金ゼロ）
 
-- [x] **Chaturbate アフィリエイト登録**（審査なし・即時）
-- [x] **送客リンク取得**（無料登録モデル / campaign code = `IebjP`）
-- [x] **最小LP作成** → 審査落ちを受けて**中身のあるコンプラ対応版に改修**
-- [x] **LPをNetlifyで公開**（URL固定）
-- [x] **HilltopAds 広告主アカウント登録・ログイン**
-- [x] **$100入金（デビットカード）** → 残高 $96.8
-- [x] **キャンペーン作成（cam-test-01 / 929325）** → **却下**（Unacceptable offer）
-- [x] **却下原因の特定と対処**（下記「学び」参照）
-- [x] **新規キャンペーン cam-test-02 を再作成・申請** → **保留中（審査待ち）**
-- [ ] 審査通過 → 配信開始
-- [ ] Day 3-4：数字を見る
-- [ ] Day 5：1回改善（死んだ枠を切る）
-- [ ] 停止して振り返り
+MyLead徹底調査の結論（既に承認済みの出会い系SOI「Jointhedating - tier1」を主役に）を受け、BeMobで計測の「配管」を実際に構築した。すべて課金ゼロ。
 
----
+**作成したもの（BeMob / アカウント: matuoka）:**
+1. **Affiliate Network「MyLead」** … postback URLを発行（`https://kuw0w.bemobtrcks.com/postback?cid=REPLACE&payout=OPTIONAL…`）
+2. **Offer「Global - Jointhedating - Tier1 SOI」** … URL=`https://link-check.click/a/ADVEltZvyIQlXN`／Click ID Parameter=`ml_sub1`（BeMobのclick_idをMyLeadに受け渡す）／Payout=Manual $1.94／Network=MyLead
+3. **Campaign「HTA - Jointhedating - Tier1 pop」** … Traffic source=HilltopAds／Built-In Flow／Direct linking（LPなし直リンク）／Redirect 302／Offer=上記100%
+   - Campaign URL（HilltopAdsに入れる）: `https://kuw0w.bemobtrcks.com/go/9931ea9c-77bf-4c2f-8759-d821d8e034f8?…`（HilltopAdsトークン付き）
+   - 既存の Traffic Source「HilltopAds」テンプレは流用
 
-## 主要な資産・設定値（再開時の参照用）
-
-| 項目 | 値 |
-|---|---|
-| オファー | Chaturbate 無料登録（PPL/SOI）／ campaign code `IebjP` |
-| 送客リンク | `https://chaturbate.com/in/?tour=hr8m&campaign=IebjP&track=default` |
-| LP（公開URL） | `https://preeminent-squirrel-455631.netlify.app/` |
-| LPホスティング | Netlify（プロジェクト名 `preeminent-squirrel-455631`） |
-| LPソース | `prelander_age_gate.html` ／ デプロイ用 `lp_deploy/index.html` |
-| 広告ネットワーク | HilltopAds（広告主アカウント） |
-| 残高 | $96.8 |
-| 旧キャンペーン | **929325 / cam-test-01 → 却下**（放置でOK） |
-| 新キャンペーン | **cam-test-02 → 保留中（審査待ち）** |
-
-### キャンペーン設定（cam-test-02）
-- フォーマット：モバイル用 Popunder ／ タイプ：CPM ／ チャンネル：Non-Mainstream
-- GEO：フィリピン（PH）1国 ／ デバイス：Mobile/smartphone
-- フィルター：Proxy 許可しない／Web view 許可する
-- CPM：$0.74（最小）／ 1日上限：$20 ／ 合計上限：$45
-- 頻度上限：1／時間
+**残タスク（お金を使う直前で停止・要判断）:**
+- ★**トラッキングドメイン判断**：現状は共有デフォルト `kuw0w.bemobtrcks.com`。HilltopAds審査での共有ドメイン汚染リスクを避けるなら、独自クリーンドメイン `track.livenight-guide.com` をBeMobに追加＋DNSにCNAME1本（DNSアクセス要）。
+- MyLead側のPostback設定（BeMobのpostback URLを貼り、cid=MyLeadのml_sub1マクロ、payoutをマッピング）※MyLeadの正確なマクロ名を要確認
+- HilltopAdsでキャンペーン作成→**無料審査に提出**（着地ドメインの壁をタダで判定）
+- 通れば $20だけ入金して計測つき配信 → read→cut→scale
 
 ---
 
-## 今回いちばんの学び：審査落ち → 修正
+## 2026-07-05 追記2：BeMob不採用 → 直リンク+subidでHilltopAds審査に提出（お金ゼロ）
 
-**却下理由：「Unacceptable offer」**
+**ドメイン評判の判定結果:**
+- `bemobtrcks.com`（BeMob共有）= **GSB「危険」（フィッシング）** → HilltopAdsは確実却下 → **BeMob不採用**（独自ドメインは月$249で見送り）。
+- `link-check.click`（MyLead offer link）= **GSBクリーン ＋ VT 1/91**（無名1社のみ）= 前回承認のgame-test-01（1/92+GSB安全）と同水準 → 合格ライン。
 
-HilltopAdsの禁止事項のうち、以下に該当していた：
-- **「中身の薄い／空っぽのLP」は禁止**
-- **「スマートリンク（転送するだけのリンク）」は禁止**
+**方針転換:** BeMobを挟まず、`HilltopAds → link-check.click → 最終ページ` の最短クリーンチェーン。zone計測は**リンクに `?ml_sub1={{zoneid}}` を付与し、MyLeadのsub-ID別レポート**で無料実現（postback不要）。
 
-旧LPは「年齢確認ボタン → Chaturbateの転送リンクに飛ぶだけ」の薄い転送ページだった。
+**HilltopAdsキャンペーン作成・提出（ID 936437 "dating-jth-01"）:**
+- Popunder mobile / Smart CPM / Non-Mainstream(18+) High Activity / GEO=US
+- URL: `https://link-check.click/a/ADVEltZvyIQlXN?ml_sub1={{zoneid}}`
+- Proxy=Disallow（bot対策）／Daily $20・Total $20（二重上限）／**自動配信OFF**
+- 相場: US non-mainstream pop = Premium $7.41 / 推奨 $4.94 / 最低 $3.91 CPM（$20で約4,000〜5,000表示）
+- **状態: PENDING（審査中・最大24h）/ TRAFFIC OFF。承認されても自動課金しない。**
 
-**対処：** LPを、実際に読める中身（カムサイトの解説・FAQ・始め方・アフィリ表記・18禁注記）を持った**本物のコンテンツページ**に作り替え。禁止要素（偽通知・偽カウントダウン・ブランドロゴ・露骨画像）は不使用。URLは固定のままNetlifyに上書きデプロイ。
-
-**補足：** 却下キャンペーンは「更新」しても再審査に戻らない。クローン（複製）は**2回目の入金後のみ**利用可のため使えず、**新規キャンペーンとして作り直して**再申請した。
-
----
-
-## 次にやること
-
-1. **審査結果を待つ**（最大24時間、たいてい1時間前後）。
-2. **通ったら** → 配信開始。HilltopAdsで「表示回数／クリック／消化額」、Chaturbateで「無料登録」を確認（**$30前後たまるまで触らない**）。
-3. **また却下されたら** → 原因は送り先リンク自体の可能性大。**サポートに連絡**（英文の問い合わせ文は準備済み）。
-4. **Day 5：1回改善** → 成果の出ない枠（zone）を特定して**ブラックリスト化**。これが最大の学びどころ。
-
----
-
-## 心づもり（重要）
-
-- フィリピン（Tier-3）配信のため、無料登録1件の紹介料は**約$0.01**。**この第1ラウンドは金額的にはほぼ確実に赤字**。
-- それでOK。**$96.8は授業料**。目的は「仕組みが回るのを体験する」こと。CVが1件でも出れば全工程が回った証拠＝大成功。
-- 調査結果でも「90%以上が苦戦・黒字化まで6〜12ヶ月・勝ちキャンペーンですら初日は赤」。**赤字＝失敗ではない。**
-
----
-
-## 最終結果（2026-07-01）：MyLead × HilltopAds は構造的に不可
-
-出会い系ルートを最後まで詰めた結果、**明確な結論**に到達した。
-
-- MyLeadでオファー承認・追跡リンク取得まで完了（Jointhedating $1.94 SOI）。
-- だが**MyLeadの転送ドメインが軒並みブラックリスト判定**：
-  - `connectorlink.online` = **10/92（BitDefender/Kaspersky/Fortinet/Sophos がPhishing判定）**
-  - `check-link.click`（代替の中で最良）= **2/92（大手はClean）**
-- check-link.click に切替えて HilltopAdsでキャンペーン申請（932655 / dating-test-01）→ **却下：「悪意のあるドメインです」**。
-- **一番きれいな2/92でも却下** ＝ MyLeadの他の代替ドメインも同様に無理と判断。
-
-**確定した学び（今回の核心）：**
-> HilltopAdsは送り先ドメインの評判に非常に厳格。**無料ホスティング（netlify 1/92）もCPAネットワークの共有転送ドメイン（MyLead 2〜10/92）も通らない。** 「MyLead案件 × HilltopAds」は構造的に不可。
-
-**唯一確実に壁を越える道：**
-自分で**クリーンな独自ドメインを1つ取得**し、**クリーンな最終送り先**に繋ぐ。今回クリーンだった最終送り先は **Chaturbate（0/92）** のみ。
-→ 再開するなら「独自ドメイン購入 → 改良済みLP設置 → Chaturbateへ送客 → HilltopAds再申請」。camに戻る形にはなる。
-
-**残高 $96.8 は HilltopAds に温存（配信0のため未消化）。**
-
-## 続報（2026-07-01・好転）：クリーンなMyLeadドメインを発見、再申請
-
-前セクションの「MyLead × HilltopAds は不可」は**早計だった**。MyLeadの代替ドメインを1つずつVirusTotalで当たったところ——
-
-- `check-link.click` = 2/92 → HilltopAds却下（932655 dating-test-01）
-- **`link-check.click` = 0/92（完全クリーン・大手全てClean）** ← 当たり！（※名前が紛らわしい：check-link と link-check は別物）
-
-MyLeadのリンクドメインを **link-check.click** に切替え、リンク＝ **`https://link-check.click/a/ADVEltZvyIQlXN`**。
-
-これで **HilltopAds 新規キャンペーン 933021 / dating-test-02 を申請 → 保留中（審査中）**。
-- 設定：モバイルpopunder／CPM 1.6／GB／Mobile／Proxy・Web view 許可しない／1日$20・合計$45。
-- URL欄がクリーンな link-check.click であることを確認済み。
-
-**学びの修正：** 「CPAネットワークの転送ドメインは全部汚い」わけではない。**代替ドメインを1つずつVirusTotalで当たれば、0/92のクリーンなものが見つかることがある**。ドメイン評判チェック → クリーンなものを採用、が正しい進め方。
-
-**現ステータス：dating-test-02 審査待ち。** 通れば配信開始 → 数字を見る（Day3-4）。
-
-## 最終結論（2026-07-02）：MyLead出会い系はHilltopAdsで構造的に不可（確定）
-
-dating-test-02（933021・**入口ドメインは link-check.click = 0/92 の完全クリーン**）も **却下：「Malicious domain」**。
-
-**判明した決定的事実：**
-> HilltopAdsは**転送チェーンの“最終着地”まで全部追ってドメインを判定する**。入口（link-check.click）が0/92でも、その先の **MyLead中継／広告主の着地ページ**が汚れていれば弾く。そして着地ページは**アフィリ側（あなた）には変えられない**。
-> → **MyLedの転送型オファー × HilltopAds は、入口をいくらきれいにしても構造的に通らない。** 確定。
-
-**却下の通算：5回**（cam-test-01/02＝Unacceptable offer、dating-test-01＝Malicious domain(check-link.click 2/92)、dating-test-02＝Malicious domain(link-check.click 0/92でも)）。
-
-**残された唯一の可能性（未検証）：** cam(Chaturbate) はチェーンが端から端までクリーン（chaturbate.com=0/92）。**自分のクリーンな独自ドメイン → Chaturbate** なら「Malicious domain」は回避できる可能性がある。ただし cam-test は別途「Unacceptable offer」で落ちた履歴があり、通る保証はない。かつ本人はcamに違和感あり。
-
-**判断：いったん停止。** $96.8 はHilltopAdsに温存（配信0・未消化）。実コストは入金手数料の約480円のみ。
-
-**総括（学習1周の成果）：** 配信・数字には到達しなかったが、この業界で初心者が挫折する関門——海外決済/KYC、壊れた登録フォーム、審査キュー、そして最大の壁「**送り先ドメインの評判＋転送チェーン全体の審査**」——を、すべて実地で踏破・理解した。「再現性のある稼ぐ力」の土台としての“地図”は完全に手に入った1周だった。
-
-## 関連ファイル（プロジェクト内）
-
-- `アダルト広告アービトラージ_D案_学習1周設計.md` … 全体設計
-- `競合・成功事例_徹底リサーチ.md` … 競合・勝ちパターン・規制の調査
-- `D案_学習1周ロードマップ.svg` … ビジュアル版ロードマップ
-- `prelander_age_gate.html` / `lp_deploy/index.html` … LP本体
+**次:** 審査結果（承認/却下）を確認 → 承認なら本人承認のうえ配信ON（$20）→ MyLeadのsub-ID別で成約zoneを読む。却下ならゲーム案件へ。
