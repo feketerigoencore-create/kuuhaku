@@ -50,3 +50,13 @@ MyLead徹底調査の結論（既に承認済みの出会い系SOI「Jointhedati
 - **状態: PENDING（審査中・最大24h）/ TRAFFIC OFF。承認されても自動課金しない。**
 
 **次:** 審査結果（承認/却下）を確認 → 承認なら本人承認のうえ配信ON（$20）→ MyLeadのsub-ID別で成約zoneを読む。却下ならゲーム案件へ。
+
+---
+
+## 2026-07-07 追記：A案（LP入口）でHilltopAds再審査に提出できた
+
+- 前回の「Invalid link」却下＝GEOロック着地(link-check.click/unsupportedcountry)を審査botが見た可能性 → **LP(livenight-guide.com)を入口**にして解決を図る。
+- LPを**出会い系版に作り替え**（cam→dating、案件リンク link-check.click/a/ADVEltZvyIQlXN、zone受け渡し ml_sub1）、**Netlifyに再デプロイ**（Chrome file_uploadでindex.htmlを差し替え、ライブ表示を確認）。
+- HilltopAdsで新キャンペーン作成時、フォームが「URL is invalid」で送信拒否に見えた → **JSで確認したところ、そのエラー要素は `display:none`（非表示）＝誤検知**。真因は**品質ガイドライン確認トグル未チェック**（refクリックが裏の隠しinputに当たっていた）。**見える緑トグルを座標クリック**で解決。
+- 結果：**`dating-jth-02`(ID 937744) = PENDING / TRAFFIC OFF / Daily$20・Total$20 / 自動配信OFF**。URL=`https://livenight-guide.com/?subid={{zoneid}}`。お金は未使用。
+- 次：審査結果（承認/却下）を確認 → 承認なら本人承認で$20配信 → MyLead sub-ID別で成約zoneを読む。却下ならゲーム案件へ。
