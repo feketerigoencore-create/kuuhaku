@@ -170,6 +170,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
       "switcher:クイックスイッチャーを開く": false,
       "graph:グラフビューを開く": false,
       "canvas:新規キャンバスを作成": false,
@@ -181,6 +182,8 @@
   },
   "active": "2ab47ee63c7042d8",
   "lastOpenFiles": [
+    "lp_deploy/index.html.tmp.20952.bdf944dcef21",
+    "verticals/成人向けコミック/01_research/weekly/更新ネタ_2026-07-07.md",
     "_戦略/MyLead徹底調査_結論.md",
     "verticals/アダルトグッズ女性向け/01_research/ショップ配送裏取り_2026-07.md",
     "verticals/アダルトグッズ女性向け/01_research/KW調査_グッズ_2026-07.md",
@@ -213,8 +216,6 @@
     "verticals/同人音声ASMR/02_outlines/asmr-30day-calendar-2026-07-04.md",
     "verticals/同人音声ASMR/03_drafts/asmr-post-templates-30-2026-07-04.md",
     "verticals/女性向けアダルトグッズ/03_drafts/femaleadult-post-templates-30-2026-07-05.md",
-    "verticals/同人音声ASMR/03_drafts/asmr-profiles-fixed-2026-07-04.md",
-    "verticals/女性向けアダルトグッズ/03_drafts/femaleadult-profiles-fixed-2026-07-05.md",
     "verticals/女性向けアダルトグッズ/_宿題_XThreads探索_CoworkD_2026-07-04.md.tmp.33400.55b45cc34269",
     "verticals/女性向けアダルトグッズ/00_女性向けグッズ_HUB.md.tmp.23908.b3e288522a99",
     "_戦略/案件別プラン/D案_学習1周ロードマップ.svg",
