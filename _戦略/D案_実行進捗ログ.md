@@ -60,3 +60,14 @@ MyLead徹底調査の結論（既に承認済みの出会い系SOI「Jointhedati
 - HilltopAdsで新キャンペーン作成時、フォームが「URL is invalid」で送信拒否に見えた → **JSで確認したところ、そのエラー要素は `display:none`（非表示）＝誤検知**。真因は**品質ガイドライン確認トグル未チェック**（refクリックが裏の隠しinputに当たっていた）。**見える緑トグルを座標クリック**で解決。
 - 結果：**`dating-jth-02`(ID 937744) = PENDING / TRAFFIC OFF / Daily$20・Total$20 / 自動配信OFF**。URL=`https://livenight-guide.com/?subid={{zoneid}}`。お金は未使用。
 - 次：審査結果（承認/却下）を確認 → 承認なら本人承認で$20配信 → MyLead sub-ID別で成約zoneを読む。却下ならゲーム案件へ。
+
+---
+
+## 2026-07-07 追記：C案（ゲームinstall）でHilltopAds審査に提出できた
+
+- dating(dating-jth-02)は却下：理由「Unacceptable offer.（中身NG）＋Empty targeting.（GEO未保存）」。①の中身の壁が固いので**datingは切り上げ**。
+- **ゲームinstallへ切替**（着地=Google Play=クリーン＝前回 game-test-01 が承認された型）。MyLeadで Fruit Puzzle Crush のリンク取得：`https://sungoclick.space/a/J6okxfK4w2IvJRj`。
+- HilltopAdsで新キャンペーン作成。**フォームの重要な学び**：カスタムのトグル/チェックは通常クリック（座標/ref）だとAngularモデルに反映されないことがある（"Empty targeting"/"accepted OSs"エラーの原因）。**JSのネイティブ `input.click()` で確実に反映**。「URL invalid」表示は多くが `display:none` の非表示要素＝誤検知。
+- 設定：Popunder mobile / CPM / **Mainstream High Activity** / GEO=US / OS絞りはOFF(空OS要件回避) / URL=`https://sungoclick.space/a/J6okxfK4w2IvJRj?ml_sub1={{zoneid}}` / 自動配信OFF / 品質確認ON / 総予算$20上限。
+- 結果：**`game-fpc-01`(ID 940855) = PENDING / TRAFFIC OFF / Total$20**。お金未使用。
+- 次：審査結果を確認 → 承認なら本人承認で$20配信（要OS=Android追記）→ MyLead sub-ID別で成約zoneを読む。
