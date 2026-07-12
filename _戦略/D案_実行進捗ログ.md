@@ -71,3 +71,20 @@ MyLead徹底調査の結論（既に承認済みの出会い系SOI「Jointhedati
 - 設定：Popunder mobile / CPM / **Mainstream High Activity** / GEO=US / OS絞りはOFF(空OS要件回避) / URL=`https://sungoclick.space/a/J6okxfK4w2IvJRj?ml_sub1={{zoneid}}` / 自動配信OFF / 品質確認ON / 総予算$20上限。
 - 結果：**`game-fpc-01`(ID 940855) = PENDING / TRAFFIC OFF / Total$20**。お金未使用。
 - 次：審査結果を確認 → 承認なら本人承認で$20配信（要OS=Android追記）→ MyLead sub-ID別で成約zoneを読む。
+
+---
+
+## 2026-07-07 追記：Mikeサポート回答＋原因確定（中継ドメインの汚れ）
+
+**Mike/サポートの回答（HilltopAds Intercom）:**
+- アカウントに制限は無い。「Unacceptable offer」は毎回、次のどれか：①URLor**リダイレクト経路のどれかのドメインがGSB/AVでフラグ**、②**最終着地がmalicious**、③オファー種別/LPがルール外。
+- 「sungoclick.space→Google Playのチェーンも、**経路の全ドメインがクリーン**かつオファー種別が許可なら通る」。
+- **今出せる**：games/mobile apps/dating/iGaming/sweepstakes/VPN/cleaners/e-commerce/OnlyFans/pin-submits/streaming dates。
+- **避ける**：techsupport/push購読/trafficback/自動DL/書類なし金融/薬物/酒/詐欺/**AVフラグ済みドメイン**/smartlink。
+- **出す前に最終着地＋全リダイレクトドメインをVirusTotal/Sucuriで確認**。
+
+**確定した原因（VT実測）:**
+- `sungoclick.space`（MyLeadゲーム中継）＝**2/91**（Bfore.Ai＋Chong Lua Dao）。game-test-01承認時は1/92だった→**1社→2社(複数AV)に悪化**したのが game-fpc-01 却下の正体。
+- ＝ジャンルでも着地(Google Play)でもなく、**MyLeadの共有中継ドメインが汚れた**のが構造的原因。MyLeadの共有ドメイン(sungoclick.space/link-check.click)は時間で評判が上下する。
+
+**正しい修正の方向：** 中継から汚れMyLeadドメインを外す＝**自分のクリーン独自ドメインを中継に使う**。MyLeadなら **HideLink（独自ドメインでリンクをマスク）**＝要申請。または汚れが引くのを待つ/別網。
