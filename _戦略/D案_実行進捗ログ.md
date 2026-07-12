@@ -88,3 +88,14 @@ MyLead徹底調査の結論（既に承認済みの出会い系SOI「Jointhedati
 - ＝ジャンルでも着地(Google Play)でもなく、**MyLeadの共有中継ドメインが汚れた**のが構造的原因。MyLeadの共有ドメイン(sungoclick.space/link-check.click)は時間で評判が上下する。
 
 **正しい修正の方向：** 中継から汚れMyLeadドメインを外す＝**自分のクリーン独自ドメインを中継に使う**。MyLeadなら **HideLink（独自ドメインでリンクをマスク）**＝要申請。または汚れが引くのを待つ/別網。
+
+---
+
+## 2026-07-07 追記：別網 Cpamatica に登録（②案・承認待ち）
+
+- MyLead×HilltopAdsは「共有中継ドメイン(sungoclick.space 2/91等)が汚れ→HilltopAds却下」で構造的に詰み。HilltopAds($51)はそのまま使い、**ドメインがクリーンな別アフィリ網から案件を取る②案**へ。
+- 候補比較（web検索）→ **Cpamatica**（popunder対応明記／SOI・dating・sweeps／初心者可）を選択。Mobidea/Adsterra CPAは予備。
+- 登録時の壁＝**メッセンジャー必須**（Skype/Telegram）。本人がTelegramを新規作成（**@feketerigoencore**）→ 記入して突破。
+- 記入内容：Individual Media Buyer / Japan / PayPal / Telegram=@feketerigoencore / ジャンル=Mainstream+Adult dating+Sweepstakes / トラフィック=Popunder / 既存網=MyLead(+HilltopAds pop) / 月収=Less than $500(正直) / GEO=US / トラッカー=No / 知った経路=Google。
+- **結果：登録完了（Thanks for choosing us）。手動審査12〜72h。承認ならマネージャーがTelegramに連絡。**
+- 次：承認後、Cpamaticaのオファーのチェーン(中継+着地)をVT/GSB検査→クリーンな軽案件を特定→HilltopAdsでキャンペーン作成→無料審査→本人承認で$20配信。
